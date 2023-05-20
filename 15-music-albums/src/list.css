@@ -1,0 +1,92 @@
+
+.album-container{
+    width: 100%;
+  height: 100%;
+   /* align-items: center; */
+   /* margin-top: 100px; */
+   padding-top:120px;
+   display: flex;
+   justify-content: center;
+   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.album-body{
+  width: 1150px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(200px, 1fr)); 
+  gap:40px;
+  /* grid-column: 1fr 1fr 1fr 1fr; */
+  justify-content:center;
+  /* align-items:center; */
+}
+.albums{
+    color: white;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction:column;
+    max-width: 200px;
+}
+.images{
+    height: 250px;
+    /* background-size: contain; */
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.content{
+    background-color: black;
+    /* border:1px solid aqua; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.artist{
+    color:rgb(128, 123, 123) ;
+    font-weight: 100;
+}
+
+.artist-song{
+    font-weight: 400;
+}
+
+.numbers{
+    margin-top: 0px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    color: rgb(128, 123, 123);
+}
+
+@media (max-width:1260px){
+    .album-body{
+        grid-template-columns: repeat(3,1fr);
+        width: 800px;
+        gap: 60px;
+        /* border:1px solid white; */
+    }
+}
+@media (max-width:950px){
+    .album-body{
+        grid-template-columns: repeat(2,1fr);
+        width: 500px;
+        gap: 60px;
+        /* border:1px solid white; */
+    }
+} 
+ 
+@media (max-width:720px){
+    .album-body{
+        grid-template-columns: repeat(1,1fr);
+        width:250px;
+        /* border: 1px solid white; */
+    }
+} 

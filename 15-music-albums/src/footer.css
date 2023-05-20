@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid white; */
+    position: fixed;
+    /* position: fixed; */
+    bottom: 0;
+    background-color:#282C34;
+    
+}
+.ranger{
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 6px;
+    margin-top: -10px;
+    background-image: linear-gradient(to right,green 20%,rgb(212, 202, 202));
+    cursor:pointer;
+}
+.ranger::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width: 15px;
+    height: 15px;
+    background-color:  rgb(8, 109, 8);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px greenyellow;
+    cursor:pointer;
+}
+.range-details{
+    color: white;
+    display: flex;
+     justify-content: space-around;
+     
+}
+.range-details h4{
+    font-weight: 100;
+}

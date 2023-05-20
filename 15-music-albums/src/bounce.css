@@ -1,0 +1,48 @@
+
+.container{
+    height: 150px;
+    width: 100%;
+    /* background-color: aqua; */
+    /* border: 1px solid white; */
+    /* margin:auto; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    background-color:rgb(158, 10, 10);
+    display: inline-block;
+    /* margin-top:48px; */
+    /* margin-left: 60px; */
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid blue; */
+    box-shadow: 0px 0px 50px rgb(0, 245, 253);
+    border-radius: 50%;
+    animation: balls 1s linear 1s infinite normal;
+    z-index: 1;
+}
+
+.status{
+ visibility: hidden;   
+}
+
+@keyframes balls {
+   0%{
+    transform: translatey(0px);
+   }
+   25%{
+    transform: translateY(40px);
+   }
+   50%{
+    transform: translateY(-40px);
+   }
+   /* 75%{
+    transform: translateY(20px);
+   } */
+   100%{
+    transform: translateY(0px);
+   }
+   
+}
